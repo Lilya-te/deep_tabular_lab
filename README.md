@@ -18,9 +18,8 @@ deep_tabular_lab/
 │   ├── requirements.txt
 │   ├── 01_eda_and_features.ipynb
 │   ├── 02_dropout_prediction_model.ipynb
-│   ├── 03_eda_hypothesis.ipynb
-│   ├── 04_final_v1.ipynb
-│   └── 04_final_v2.ipynb
+│   ├── 03_final_v1.ipynb
+│   └── 03_final_v2.ipynb
 └── presentation/
     └── conclusions.md
 ```
@@ -35,9 +34,8 @@ deep_tabular_lab/
 - `notebooks/` — основной пайплайн в Jupyter Notebook; зависимости перечислены в `notebooks/requirements.txt`.
 - `notebooks/01_eda_and_features.ipynb` — EDA, очистка таблиц, формирование критериев, таргета и признаков.
 - `notebooks/02_dropout_prediction_model.ipynb` — baseline-модель оттока, валидация и интерпретация признаков.
-- `notebooks/03_eda_hypothesis.ipynb` — проверка гипотез и целостности объединенного датасета.
-- `notebooks/04_final_v1.ipynb` — первая интегрированная версия финального пайплайна.
-- `notebooks/04_final_v2.ipynb` — **актуальная** финальная версия с проверкой утечек и априорной моделью.
+- `notebooks/03_final_v1.ipynb` — первая интегрированная версия финального пайплайна.
+- `notebooks/03_final_v2.ipynb` — **актуальная** финальная версия с проверкой утечек и априорной моделью.
 - `lgb_full_checkpoint.pkl` — сохраненный checkpoint обученной модели LightGBM для повторного использования без переобучения.
 - `scored_sample/` — примеры результатов скоринга модели.
 - `scored_sample/predictions_m3_m4.csv` — прогнозы для студентов модулей M3/M4 (вероятности и уровни риска).
@@ -51,10 +49,10 @@ deep_tabular_lab/
 ### `02_dropout_prediction_model.ipynb`
 Ноутбук с baseline-моделью прогнозирования оттока: обучение, валидация качества и интерпретация результатов.
 
-### `03_eda_hypothesis.ipynb`
-Исследовательский ноутбук для загрузки и первичной проверки подготовленного merged-датасета.
+### `03_final_v1.ipynb`
+Финальная интегрированная версия пайплайна с этапами анализа, очистки и подготовки данных к моделированию.
 
-### `04_final_v2.ipynb`
+### `03_final_v2.ipynb`
 Актуальная версия финального ноутбука: переопределение постановки задачи на уровне студента, фильтрация утечек, обучение на "честных" априорных признаках и прогнозы для M3/M4.
 
 ## Хранение данных
