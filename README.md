@@ -24,8 +24,6 @@ deep_tabular_lab/
     └── conclusions.md
 ```
 
-Локальные каталоги (не коммитятся, см. `.gitignore`): `.venv/`, `notebooks/tmp/`, `.cursor/`.
-
 ## Описание каталогов
 
 - `docs/` — постановка задачи и ее уточненная версия.
@@ -40,7 +38,7 @@ deep_tabular_lab/
 - `scored_sample/` — примеры результатов скоринга модели.
 - `scored_sample/predictions_m3_m4.csv` — прогнозы для студентов модулей M3/M4 (вероятности и уровни риска).
 - `presentation/` — материалы итоговой презентации.
-- `presentation/conclusions.md` — структурированные выводы и бизнес-рекомендации по результатам анализа.
+- `presentation/conclusions.md` — структурированные выводы по исследованию; **блок рекомендаций бизнесу**.
 
 
 ### `01_eda_and_features.ipynb`
